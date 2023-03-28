@@ -21,7 +21,7 @@ const imagePress = (e) => {
   const close = document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       instance.close();
-      document.removeEventListener(Object, close);
+      document.removeEventListener("keydown", close);
     }
   });
 };
