@@ -12,8 +12,6 @@ for (let i = 0; i < galleryItems.length; i++) {
   galleries.insertAdjacentHTML("afterbegin", img);
 }
 
-//************
-
 const imagePress = (e) => {
   e.preventDefault();
   const instance = basicLightbox.create(
@@ -21,7 +19,7 @@ const imagePress = (e) => {
   );
   instance.show();
   const close = document.addEventListener("keydown", (e) => {
-    if (event.key === "Escape") {
+    if (e.key === "Escape") {
       instance.close();
       document.removeEventListener(Object, close);
     }
