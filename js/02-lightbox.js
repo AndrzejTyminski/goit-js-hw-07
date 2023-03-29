@@ -22,6 +22,7 @@ for (let i = 0; i < galleryItems.length; i++) {
 // srcEl.forEach((srcEl) => console.log(srcEl.src));
 
 new SimpleLightbox(".gallery__item a", {
+  
   captions: true,
   captionsData: "alt",
   captionPosition: "bottom",
